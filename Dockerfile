@@ -3,7 +3,9 @@ FROM python:3.13-slim
 # Install dependencies
 RUN apt update && apt install -y \
     libglib2.0-0 \
-    libfuse2
+    libfuse2 \
+    libfreetype6 \
+    libfontconfig1
 
 # Update pip
 RUN pip install -U pip
